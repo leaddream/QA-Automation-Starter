@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="com.esshva.listeners.TestListener"/>
+        <listener class-name="com.esshva.listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Esshva Software Testing - Setting Configuration">
+        <classes>
+            <class name="com.esshva.tests.ConfigureFramework"/>
+        </classes>
+    </test>
+    
+    <test name="Automation Framework - Esshva Software Home Page">
+        <classes>
+            <class name="com.esshva.tests.EsshvaHomePageTest"/>
+        </classes>
+    </test>
+
+</suite>
